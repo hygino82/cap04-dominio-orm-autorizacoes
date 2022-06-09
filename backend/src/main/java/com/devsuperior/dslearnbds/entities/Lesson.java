@@ -34,7 +34,7 @@ public abstract class Lesson implements Serializable {
 	private Section section;
 
 	@ManyToMany
-	@JoinTable(name = "tb_lesson_done", 
+	@JoinTable(name = "tb_lessons_done", 
 		joinColumns = @JoinColumn(name = "lesson_id"), // usa a chave da classe que está implementando																				
 		inverseJoinColumns = { 
 			 @JoinColumn(name = "user_id"),
